@@ -1,0 +1,47 @@
+body,html {
+    background-color: wheat
+
+}
+
+p{
+    color: saddlebrown;
+}
+
+h1 {
+    text-align: center;
+    color: saddlebrown;
+}
+
+.kep1 {
+    position:relative;
+    left: 500px;
+}
+
+.kep2 {
+    position:relative;
+    left: 500px;
+}
+
+.kep3 {
+    position:relative;
+    left: 500px;
+}
+
+.kep4 {
+    position:relative;
+    left: 500px;
+}
+
+.kep5 {
+    position:relative;
+    left: 825px;
+}
+
+ol {
+    color:saddlebrown
+}
+
+ul {
+    color: saddlebrown
+}
+
