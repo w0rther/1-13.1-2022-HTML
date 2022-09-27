@@ -40,6 +40,21 @@
  */
                 
             }
+
+            #kiemelt {
+                background-color: red;
+                visibility: collapse;
+            }
+
+            .bekezdések {
+                color: blue;
+            }
+
+            .fontos {
+                font-weight: bold;
+                font-style:italic;
+                color: green;
+            }
         </style>
     </head>
     <body>
@@ -49,7 +64,7 @@
             <tr>
                 <colgroup>
                     <col span="3">
-                    <col span="2" style="background-color: red;">
+                    <col span="2" id="kiemelt">
                     </colgroup>
                 <th>1. fejléc</th>
                 <th colspan="2">2. fejléc</th>
@@ -79,6 +94,14 @@
                 <td>5. mező</td>
             </tr>
         </table>
+        <div class="bekezdések">
+            <h2>1. bekezdés.</h2>
+            <p>Lorem ipsum, dolor sit amet <span class="fontos" >consectetur</span> adipisicing elit. 
+                Repellat, harum. Repellendus neque blanditiis possimus voluptas quam necessitatibus quae illum laborum!</p>
+                <h2>2. bekezdés.</h2>
+            <p>2. bekezdés. Lorem ipsum dolor sit amet consectetur <span class="fontos">adipisicing</span> elit. 
+                Molestias soluta aliquam quos impedit natus? Est vel exercitationem unde rem labore sequi officiis libero, perspiciatis numquam.</p>
+        </div>
         <script src="" async defer></script>
     </body>
 </html>
