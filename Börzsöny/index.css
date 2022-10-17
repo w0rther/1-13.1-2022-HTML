@@ -1,0 +1,24 @@
+html {
+    background-color: #DDFFDD ;
+    color: #002200; 
+}
+
+h1 {
+    text-align:center;
+}
+
+h2 {
+    text-align:center;
+}
+
+p {
+    margin-left: 50px;
+}
+
+li {
+    font-weight: bold;
+}
+
+.uppercase {
+    text-transform: uppercase;
+  }
