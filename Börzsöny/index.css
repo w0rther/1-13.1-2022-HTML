@@ -19,6 +19,27 @@ li {
     font-weight: bold;
 }
 
-.uppercase {
-    text-transform: uppercase;
+
+
+
+div {
+    text-align:center;
+}
+
+.kep {
+    float:right;
+    width: 100px;
+}
+
+
+hr {
+    border: none;
+    font-size:30px;
+    letter-spacing: 8px;
   }
+  hr::before {
+    content: '************************';
+    display: block;
+    text-align: center;
+  }
+  
