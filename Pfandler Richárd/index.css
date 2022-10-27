@@ -51,13 +51,15 @@ html {
   }
   
   footer {
-    background: #000000;
+    background: #0084ff;
   }
-  
-  
-  /* ==========================================
-      CUSTOM UTILS CLASSES
-    ========================================== */
+
     body, html {
       height: 100%;
+    }
+    div.col {border:1px none black; padding:10px;}
+
+   
+    h4 {
+
     }
