@@ -1,0 +1,1 @@
+document.write("Ezt a script.js függvény írta ki<BR>");
