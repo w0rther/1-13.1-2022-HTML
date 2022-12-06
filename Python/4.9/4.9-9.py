@@ -1,13 +1,12 @@
 import turtle
 a = turtle.Screen()
 Eszti = turtle.Turtle()
-a.bgcolor("lightgreen")
-Eszti.pensize(4)
-Eszti.color("pink")
 
-Eszti.left(35)
-for i in range(0,5):
-   Eszti.forward(100)
-   Eszti.left(144)
+def csillag(t, sz , n):
+   for i in range(5):
+      t.forward(n)
+      t.left(sz)
+
+csillag(Eszti, 144, 100)
 
 a.mainloop()
