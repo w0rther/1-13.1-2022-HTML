@@ -1,0 +1,47 @@
+.grid-container {
+    font-family: avenir, sans-serif;
+    display: grid;
+    grid-gap:10px;
+
+    grid-template-columns: 100px 150px 150px 150px;
+    grid-template-rows:50px 200px 200px 50px;
+    grid-template-areas:
+        ". header . ."
+        "sidebar main . ."
+        "sidebar main . ."
+        "footer footer . . "
+}
+
+.grid-item {
+    padding: 10px 20px;
+}
+
+.grid-item:nth-child(1){
+    color:white;
+    background: grey;
+    grid-area: header;
+    border-radius:10px;
+    
+}
+
+
+.grid-item:nth-child(2){
+    color:white;
+    background: black;
+    grid-area: sidebar;
+    border-radius:10px;
+}
+
+.grid-item:nth-child(3){
+    color:white;
+    background: black;
+    grid-area: main;
+    border-radius:10px;
+}
+
+.grid-item:nth-child(4){
+    color:white;
+   background: grey;
+    grid-area: footer;
+    border-radius:10px;
+}
