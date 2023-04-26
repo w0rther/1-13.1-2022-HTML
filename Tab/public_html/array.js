@@ -1,5 +1,5 @@
 
-document.getElementById('tablazat').innerHTML = tablazatKeszit(5, 6);
+document.getElementById('tablazat').innerHTML = tablazatKeszit(9, 10);
 
 function tablazatKeszit(sor, oszlop) {
     var tablazat = "<table>";
@@ -55,8 +55,33 @@ for (var i = 0; i < cellak.length; i++) {
     });
 
     cellak[i].addEventListener('click', function () {
-        console.log(this);
-        this.style.borderColor = 'red';
+        let kivalasztott = document.querySelectorAll(`[style$='border: 2px solid red;']`);
+        if (kivalasztott.length < 5 && this.style.borderColor != 'red') {
+        this.style.border = 'red solid 2px';
+        let.lista = document.getElementById('lista');
+        elem = document.createElement('li');
+        elem.setAttribute('id',this.innerHTML);
+        elem.innerText = this.innerHTML;
+        lista.appendChild(elem);
+        } else {
+            if (this.style.borderColor != 'red') {
+            alert('Hiba');
+            }
+        }
+
+   
+
+        
+    });
+
+
+    cellak[i].addEventListener('dblclick', function () {
+        if (this.style.borderColor == 'red') {
+        this.style.border = 'gray solid 1px'
+        let.elem = document.getElementById(this.innerHTML);
+        let lista = document.getElementById('lista');
+        lista.removeChild(elem);
+        }
     });
 }
 
